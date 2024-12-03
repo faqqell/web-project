@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Eco products</title>
+	<style>
+		html {
+			background-image: url(https://i.pinimg.com/originals/21/2d/7d/212d7d786fb884b2bc8651841a1fb25a.jpg);
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-attachment: fixed;
+			background-size: cover;
+			
+			}
+
+		*{
+			color: white;
+			margin: 0;
+			padding: 0;
+			text-decoration: none;
+			font-family: "Gill Sans", sans-serif;
+		}
+
+		#header {
+			position: fixed;
+			width: 80%;
+			height: 3%;
+			padding: 35px 20%;
+			background: transparent;
+			background-color: white;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color:  #8FBC8F;
+		}
+		#navigation a {
+			font-size: 25px;
+			color: black;
+			text-decoration: none;
+			font-weight: 300;
+			margin: 0 20px;
+			transition: .3s	;
+		}
+		.acc{
+			background-color: #8FBC8F;
+			color: black;
+			font-size: medium;
+			border-radius: 5px;
+			margin-right: 30px;
+			width: 80px;
+			height: 35px;
+
+			
+		}
+		.acc:hover{background-color: white; transition: .1s;}
+
+		#navigation a:hover{color: green;}
+		#hed1{margin-top: 80px; display: inline-block; font-size: 90px; padding: 10px;  border-radius: 50px;}
+		#intro{ font-size: 25px; margin-top: 20px;}
+		#hed2{margin-top: 120px; font-size: 40px;  display: inline-block; padding: 10px; border-radius: 50px;}
+		#intro1{font-size: 25px; margin-top: 30px; line-height: 120%;}
+		#home {
+			margin-left: 90px;
+			padding-top: 200px;
+			padding-bottom: 1108px;
+		}
+
+		#logo{
+			position: absolute;
+			width: 150px;
+			margin-left: -180px;
+		}
+
+		#poloska{position: absolute; background-color: rgba(255, 255, 0, 0.566); width: 100%; height: 100px; margin-top: -49%;}
+
+
+		#sections{
+			margin-top: -32%;
+			width: 60%;
+			height: 790px;
+			display: grid;
+			grid-template-columns: 60% 60%;
+			grid-template-rows: 70% 70%;
+			gap: 10px;
+			margin-left: 15%;
+		}
+
+		.section{
+			background-color:rgb(255, 255, 255);
+			font-size: 30px;
+			border-radius: 13%;
+		}
+		.section:hover{
+			transition: .20s; background-color: #8FBC8F;
+		.explore{background-color: aliceblue; color: #8FBC8F;}
+		}
+
+
+		.s_photo{
+			margin-left: 10%;
+			margin-top: 4%;
+			width: 80%;
+			border-radius: 10%;
+		}
+		.s_photo h6{display: block;}
+		.s_text{
+			font-size: 26px;
+			display: inline-block;
+			padding: 3%;
+			color: black;
+		}
+		.explore{
+			background-color:  #8FBC8F;
+			width: 110px;
+			height: 50px;
+			border-radius: 5px;
+			font-size: large;
+			border: none;
+			display: inline-block; 
+   			text-align: center;
+			float: right;
+			margin-right: 60px;
+			font-size: 25px;
+			
+			
+		}
+
+		footer{
+			height: 300px;
+			background-color: rgba(255, 255, 255, 0.756);
+			margin-top: 130px;
+			h1{color: black;}
+			h3{color: black;}		
+
+
+		}
+		#contact{
+			margin-top: 30px;
+			color: black;
+			margin-left: 5%;
+		}
+		#text{
+			position: absolute;
+			margin-left: 5%;
+			margin-top: 5%;
+		}
+
+		#product-pages {
+			margin: 50px 15%;
+			margin-top: 600px;
+		}
+
+		.product-page {
+			margin-bottom: 50px;
+			margin-top: 100px;
+		}
+
+
+		.product-title {
+			font-size: 60px;
+			margin-bottom: 20px;
+			color: #8FBC8F;
+			background-color: aliceblue;
+			display: inline-block;
+			border-radius: 5px;
+			padding: 2px;
+		}
+
+		.product {
+			display: flex;
+			background-color: rgba(255, 255, 255, 0.8);
+			margin-bottom: 20px;
+			padding: 10px;
+			border-radius: 10px;
+		}
+
+		.product img {
+			width: 150px;
+			height: 150px;
+			border-radius: 10px;
+		}
+
+		.product-info {
+			margin-left: 20px;
+			font-size: 20px;
+		}
+
+		.product-info h3 {
+			margin-bottom: 10px;
+			color: black;
+		}
+
+		.product-info p {
+			margin-bottom: 10px;
+			color: black;
+		}
+
+		.product-info span {
+			color: green;
+			font-weight: bold;
+		}
+
+		footer {
+			background-color: rgba(255, 255, 255, 0.756);
+			padding: 50px;
+			text-align: center;
+		}
+		footer h3 {
+			color: black;
+		}
+
+
+		/* Для планшетов */
+@media (max-width: 1024px) {
+    #header {
+        width: 100%;
+        padding: 20px;
+        text-align: center;
+    }
+
+    #navigation a {font-size: 20px;margin: 0 15px;}
+
+    #sections {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+        width: 90%;
+        margin-left: 5%;
+		margin-top: 190px;
+    }
+
+    .section {
+        font-size: 22px;
+        padding: 10px;
+    }
+
+    .s_photo {
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 10%;
+    }
+
+
+    .explore {
+        width: 100px;
+        height: 40px;
+        font-size: 16px;
+		display: inline;
+		margin-right: 50px;
+    }
+	.product-title{font-size: 50px;}
+	#poloska{margin-top: 5px;}
+	
+}
+
+/* Для телефонов */
+@media (max-width: 768px) {
+    #header {
+        width: 100%;
+        padding: 15px;
+        text-align: center;
+    }
+
+    #navigation a {
+        font-size: 18px;
+        margin: 0 10px;
+    }
+
+    #sections {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        width: 95%;
+        margin-left: 2.5%;
+    }
+
+    .section {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .s_photo {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 5%;
+    }
+
+    footer {
+        padding: 20px;
+        text-align: center;
+    }
+
+    #home {padding: 20px;
+        margin-left: 0;
+        padding-top: 60px;
+        padding-bottom: 150px;
+    }
+
+    .explore {
+        width: 80px;
+        height: 35px;
+        font-size: 14px;
+    }
+	#product-pages{
+		margin-top: 2100px;
+	}
+	.product-title{font-size: 40px;}
+
+	
+
+
+
+}
+
+
+
+
+	</style>
+</head>
+
+
+<body>
+	<header id='header'>
+		<img id='logo' src="logo.png" alt="logo">
+		<div id='navigation'>
+			<a href='index.html'>Home</a>
+			<a href='#reusable'>Reusable products</a>
+			<a href='#self-care'>Organic self-care products</a>
+			<a href='#recucled'>Recycled products</a>
+			<a href='#pet'>Organic pet products</a>
+		</div>
+		<button class='acc'>Cart</button>
+		<button class='acc'>Account</button>
+		
+	</header>
+
+	<div id='home'>
+		<h1 id='hed1'>ECO PRODUCTS</h1>
+		<p id='intro'>Eco products are items made from renewable resources and post-consumer recycled materials, designed to minimize environmental impact. <br>Eco-Products, for instance, is a leading brand specializing in single-use foodservice packaging created from such materials.</p>
+
+		<h2 id='hed2'>The Importance of Eco-Friendly Products</h2>
+		<ol id='intro1'>
+			<li>Health Benefits: Eco-products are made from natural, safe materials, reducing the risk of allergies and health problems.</li>
+			<li>Environmental Impact: Sustainable production methods help conserve resources, protect wildlife, and reduce pollution.</li>
+			<li>Positive Choice: By choosing eco-friendly options, consumers support a healthier planet and contribute to a sustainable future.</li>
+		</ol>
+
+	</div>
+	<div id='poloska'></div>
+
+	<div id='sections'>
+		<div class='section a'>
+			<img class='s_photo' src="https://www.treehugger.com/thmb/2zU7Fza-craf6OxqmhraXy4SmY8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__treehugger__images__2019__09__lifewithoutplastic-d241b4e73e4c48be96144adab709ff43.jpg" alt="">
+			<h6 class='s_text' h6>Reusable products</h6>
+			<a class='explore' href='#reusable'>Explore</a>
+			<p class='s_text'>are designed to be used multiple times, reducing waste and promoting sustainability. </p>
+		</div>
+		<div class='section b'>
+			<img class='s_photo' src="https://i.pinimg.com/originals/a7/de/0c/a7de0c8c61c62f725185ee996991f5f4.jpg" alt="">
+			<h6 class='s_text h6'>Organic self-care</h6>
+			<a class='explore' href='#self-care'>Explore</a>
+			<p class='s_text'>are made from natural ingredients, offering a healthier and eco-friendly option for care.</p>
+		</div>
+		<div class='section c'>
+			<img class='s_photo' src="https://avatars.mds.yandex.net/i?id=edc8bbaa1e4400e33b92df68386805ab_l-9151390-images-thumbs&n=13" alt="">
+			<h6 class='s_text h6'>Recycled products</h6>
+			<a class='explore' href='#recycled'>Explore</a>
+			<p class='s_text'>transformed from waste into new products, helping reduce environmental impact and conserve resources.</p>
+		</div>
+		<div class='section d'>
+			<img class='s_photo' src="pets.png" alt="">
+			<h6 class='s_text' h6>Organic pet products</h6>
+			<a class='explore' href='#pet'>Explore</a>
+			<p class='s_text'>are made from natural ingredients, ensuring a safe and eco-friendly choice for pet care.</p>
+		</div>
+	</div>
+
+	<div id='product-pages'>
+		<div id='reusable' class='product-page'>
+			<h2 class='product-title'>Reusable Products</h2>
+			<div class='product'>
+				<img src="r1.png" alt="Product 1">
+				<div class='product-info'>
+					<h3>Stainless Steel Bottle</h3>
+					<p>Durable, eco-friendly straws with a cleaning brush. </p>
+					<span>$10</span>
+				</div>
+			</div>
+			<div class='product'>
+				<img src="r2.png" alt="Product 2">
+				<div class='product-info'>
+					<h3>Bamboo Cutlery Set</h3>
+					<p> Lightweight, reusable utensils for meals on the go.</p>
+					<span>$12</span>
+				</div>
+			</div>
+			<div class='product'>
+				<img src="r3.png" alt="Product 3">
+				<div class='product-info'>
+					<h3>Silicone Food Storage Bags</h3>
+					<p>Airtight, reusable bags for storing snacks and meals.</p>
+					<span>$15</span>
+				</div>
+			</div>
+			<div class='product'>
+				<img src="r4.png" alt="Product 4">
+				<div class='product-info'>
+					<h3>Reusable Cotton Produce Bags</h3>
+					<p>Breathable bags for fresh fruits and vegetables.</p>
+					<span>$8</span>
+				</div>
+			</div>
+		</div>
+
+
+		<div id='self-care' class='product-page'>
+			<h2 class='product-title'>Organic Self-Care Products</h2>
+			<div class='product'>
+				<img src="s1.png" alt="Product 1">
+				<div class='product-info'>
+					<h3>Herbal Shampoo Bar</h3>
+					<p>Chemical-free, nourishing shampoo in a plastic-free bar.</p>
+					<span>$14</span>
+				</div>
+			</div>
+			<div class='product'>
+				<img src="s2.png" alt="Product 2">
+				<div class='product-info'>
+					<h3>Organic Lip Balm</h3>
+					<p>Hydrating balm with natural beeswax and essential oils</p>
+					<span>$7</span>
+				</div>
+			</div>
+			<div class='product'>
+				<img src="s3.png" alt="Product 3">
+				<div class='product-info'>
+					<h3>Bamboo Toothbrush</h3>
+					<p>Biodegradable toothbrush with soft bristles.</p>
+					<span>$5</span>
+				</div>
+			</div>
+			<div class='product'>
+				<img src="s4.png" alt="Product 4">
+				<div class='product-info'>
+					<h3>Natural Deodorant Stick: </h3>
+					<p>Aluminum-free, gentle deodorant with a fresh scent.</p>
+					<span>$10</span>
+				</div>
+			</div>
+		</div>
+
+		<div id='recycled' class='product-page'>
+			<h2 class='product-title'>Recycled Products</h2>
+			<div class='product'>
+				<img src="e1.png" alt="Product 1">
+				<div class='product-info'>
+					<h3>Eco-Friendly Desk Organizer</h3>
+					<p>Made entirely from recycled plastics. </p>
+					<span>$20</span>
+				</div>
+			</div>
+			<div class='product'>
+				<img src="e2.png" alt="Product 2">
+				<div class='product-info'>
+					<h3>Recycled Fabric Tote Bag</h3>
+					<p>Strong and stylish tote bag from upcycled materials.</p>
+					<span>$18</span>
+				</div>
+			</div>
+			<div class='product'>
+				<img src="e3.png" alt="Product 3">
+				<div class='product-info'>
+					<h3>Recycled Paper Notebook</h3>
+					<p>Durable notebook crafted from post-consumer paper.</p>
+					<span>$8</span>
+				</div>
+			</div>
+			<div class='product'>
+				<img src="e4.png" alt="Product 4">
+				<div class='product-info'>
+					<h3>Plastic Bottle Planter</h3>
+					<p>Unique planter pots made from recycled bottles.</p>
+					<span>$12</span>
+				</div>
+			</div>
+		</div>
+
+		<div id='pet' class='product-page'>
+			<h2 class='product-title'>Organic Pet Products</h2>
+			<div class='product'>
+				<img src="p1.png" alt="Product 1">
+				<div class='product-info'>
+					<h3>Organic Cotton Pet Bed</h3>
+					<p>Comfortable, non-toxic bed made from natural cotton. </p>
+					<span>$40</span>
+				</div>
+			</div>
+			<div class='product'>
+				<img src="p2.png" alt="Product 2">
+				<div class='product-info'>
+					<h3>Bamboo Pet Bowl</h3>
+					<p>Eco-friendly, biodegradable bowl for food or water.</p>
+					<span>$15</span>
+				</div>
+			</div>
+			<div class='product'>
+				<img src="p3.png" alt="Product 3">
+				<div class='product-info'>
+					<h3>Grain-Free Dog Treats: </h3>
+					<p>Healthy snacks made with organic ingredients.</p>
+					<span>$10</span>
+				</div>
+			</div>
+			<div class='product'>
+				<img src="p4.png" alt="Product 4">
+				<div class='product-info'>
+					<h3>Natural Dog Shampoo</h3>
+					<p>Gentle, chemical-free shampoo for a healthy coat.</p>
+					<span>$12</span>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+	
+
+	<footer>
+		<div id='contact'>
+			<h1>Контакты</h1>
+			<h3>0500999666</h3>
+			<h3>greenripple@gmail.com</h3>
+			<hr>
+		</div>
+		<h3 id='text'>We care about the planet and choose only environmentally friendly products for your health and harmony with nature. <br>
+			Join our community and together let's take a step towards a sustainable future!</h3>
+
+	</footer>
+
+</body>
+</html>
