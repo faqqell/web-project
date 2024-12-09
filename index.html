@@ -109,21 +109,7 @@
 			padding: 3%;
 			color: black;
 		}
-		.explore{
-			background-color:  #8FBC8F;
-			width: 110px;
-			height: 50px;
-			border-radius: 5px;
-			font-size: large;
-			border: none;
-			display: inline-block; 
-   			text-align: center;
-			float: right;
-			margin-right: 60px;
-			font-size: 25px;
-			
-			
-		}
+		
 
 		footer{
 			height: 300px;
@@ -141,8 +127,9 @@
 		}
 		#text{
 			position: absolute;
-			margin-left: 5%;
+			margin-left: 17%;
 			margin-top: 5%;
+
 		}
 
 		#product-pages {
@@ -206,11 +193,27 @@
 			text-align: center;
 		}
 		footer h3 {
+			text-align: center;
 			color: black;
 		}
 
+@media (max-width: 1670px){
+	#navigation{
+		display: flex;
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 8px;
 
-		/* Для планшетов */
+	}
+	#header{
+		
+		height: 13%;
+	}
+	#text{
+			margin-left: 10%;
+		}
+}
+
 @media (max-width: 1024px) {
     #header {
         width: 100%;
@@ -240,19 +243,14 @@
     }
 
 
-    .explore {
-        width: 100px;
-        height: 40px;
-        font-size: 16px;
-		display: inline;
-		margin-right: 50px;
-    }
 	.product-title{font-size: 50px;}
 	#poloska{margin-top: 5px;}
+	#text{
+			margin-left: -4%;
+		}
 	
 }
 
-/* Для телефонов */
 @media (max-width: 768px) {
     #header {
         width: 100%;
@@ -292,13 +290,11 @@
         margin-left: 0;
         padding-top: 60px;
         padding-bottom: 150px;
+		
     }
+	#hed1{margin-top: 15%;}
+	#intro1{margin-left: 3%;}
 
-    .explore {
-        width: 80px;
-        height: 35px;
-        font-size: 14px;
-    }
 	#product-pages{
 		margin-top: 2100px;
 	}
@@ -350,25 +346,25 @@
 		<div class='section a'>
 			<img class='s_photo' src="https://www.treehugger.com/thmb/2zU7Fza-craf6OxqmhraXy4SmY8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/__opt__aboutcom__coeus__resources__content_migration__treehugger__images__2019__09__lifewithoutplastic-d241b4e73e4c48be96144adab709ff43.jpg" alt="">
 			<h6 class='s_text' h6>Reusable products</h6>
-			<a class='explore' href='#reusable'>Explore</a>
+			
 			<p class='s_text'>are designed to be used multiple times, reducing waste and promoting sustainability. </p>
 		</div>
 		<div class='section b'>
 			<img class='s_photo' src="https://i.pinimg.com/originals/a7/de/0c/a7de0c8c61c62f725185ee996991f5f4.jpg" alt="">
 			<h6 class='s_text h6'>Organic self-care</h6>
-			<a class='explore' href='#self-care'>Explore</a>
+			
 			<p class='s_text'>are made from natural ingredients, offering a healthier and eco-friendly option for care.</p>
 		</div>
 		<div class='section c'>
 			<img class='s_photo' src="https://avatars.mds.yandex.net/i?id=edc8bbaa1e4400e33b92df68386805ab_l-9151390-images-thumbs&n=13" alt="">
 			<h6 class='s_text h6'>Recycled products</h6>
-			<a class='explore' href='#recycled'>Explore</a>
+			
 			<p class='s_text'>transformed from waste into new products, helping reduce environmental impact and conserve resources.</p>
 		</div>
 		<div class='section d'>
 			<img class='s_photo' src="pets.png" alt="">
 			<h6 class='s_text' h6>Organic pet products</h6>
-			<a class='explore' href='#pet'>Explore</a>
+			
 			<p class='s_text'>are made from natural ingredients, ensuring a safe and eco-friendly choice for pet care.</p>
 		</div>
 	</div>
